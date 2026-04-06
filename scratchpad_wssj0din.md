@@ -1,0 +1,2 @@
+- Checked http://localhost:5173: Successfully loaded "Traffic Management Dashboard".
+- Checked http://localhost:3000: Failed to connect (ERR_CONNECTION_REFUSED).

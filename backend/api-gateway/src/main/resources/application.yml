@@ -1,0 +1,25 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: api-gateway
+  kafka:
+    bootstrap-servers: kafka:9092
+    consumer:
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.springframework.kafka.support.serializer.JsonDeserializer
+      properties:
+        spring.json.trusted.packages: "*"
+  data:
+    redis:
+      host: redis
+      port: 6379
+
+services:
+  fault-detector: "http://fault-detector:8083"
+  analytics-engine: "http://analytics-engine:8085"
+  storage:
+    BLR: "http://server-blr:8080"
+    DEL: "http://server-del:8080"
+    MUM: "http://server-mum:8080"

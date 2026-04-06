@@ -1,0 +1,9 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: producer-service
+
+ingestion:
+  url: http://ingestion:8081/api/ingest/batch

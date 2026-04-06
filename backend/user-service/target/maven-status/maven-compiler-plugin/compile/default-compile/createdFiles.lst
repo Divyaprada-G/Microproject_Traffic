@@ -1,0 +1,7 @@
+com\ddsm\traffic\user\AuthResponse.class
+com\ddsm\traffic\user\UserApplication.class
+com\ddsm\traffic\user\UserRepository.class
+com\ddsm\traffic\user\User.class
+com\ddsm\traffic\user\LoginRequest.class
+com\ddsm\traffic\user\SignupRequest.class
+com\ddsm\traffic\user\UserController.class
