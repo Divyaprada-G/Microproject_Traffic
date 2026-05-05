@@ -2,6 +2,25 @@
 
 This project simulates a highly scalable, geo-distributed traffic data management infrastructure for Indian Smart Cities. It uses a modern microservices architecture with Spring Boot, Kafka, Redis, and Docker.
 
+## Technology Stack
+
+**Frontend (Dashboard):**
+- React 18 & TypeScript
+- Vite
+- Tailwind CSS
+- Material UI (MUI) & Radix UI
+- Recharts (Analytics Data Visualization)
+- React Leaflet (Live Interactive Map) 
+
+**Backend (Microservices):**
+- Java & Spring Boot (Web, Data JPA)
+- PostgreSQL (Database)
+- Apache Kafka & Zookeeper (Event Streaming)
+- Redis (Caching)
+
+**Infrastructure & Deployment:**
+- Docker & Docker Compose
+
 ## Architecture & Components
 
 - **Producer Service:** Simulates 10,000+ vehicles generating real-time traffic data, heavily favoring the Karnataka/Bengaluru region.
@@ -12,6 +31,34 @@ This project simulates a highly scalable, geo-distributed traffic data managemen
 - **Analytics Engine:** Processes the Kafka stream to build live real-time trends for state-wise statistics and congestion levels.
 - **API Gateway:** Centralized Gateway exposing REST APIs and WebSockets. Uses Redis to cache expensive DB lookups and handles dynamic failover when a region goes offline.
 - **Frontend / UI:** Connects via REST/Websockets to monitor the entire system on a React Leaflet map.
+
+## Technological Stack
+
+### Backend
+- **Java 17**
+- **Spring Boot 3.1.5** & **Spring Cloud**
+- **Maven** (Build Tool)
+
+### Messaging & Event Streaming
+- **Apache Kafka 3.5** (Message Broker)
+- **Apache Zookeeper 3.8** (Coordination)
+
+### Data Storage & Caching
+- **PostgreSQL 15** (Relational Database)
+- **Redis 7** (In-Memory Data Structure Store / Cache)
+
+### Frontend (Smart City Traffic Dashboard)
+- **React 18** & **TypeScript**
+- **Vite 6** (Build Tool)
+- **Tailwind CSS 4** (Styling)
+- **Material UI (MUI)** & **Radix UI** (Component Libraries)
+- **Recharts** (Data Visualization)
+- **Leaflet & React Leaflet** (Mapping)
+- **React Router 7** (Routing)
+
+### Infrastructure & Deployment
+- **Docker** & **Docker Compose**
+- **Microservices Architecture**
 
 ## Project Structure
 ```text
